@@ -11,7 +11,7 @@ namespace VersionControl
         public string Version;
         abstract public void Execute(MergeResult<T> c);
 
-        public Command(string version)
+        protected Command(string version)
         {
             this.Version = version;
         }
@@ -23,7 +23,7 @@ namespace VersionControl
         public int LineNumber;
         public string Message;
 
-        public LineCommand(string version, int lineNmber)
+        protected LineCommand(string version, int lineNmber)
             : base(version)
         {
             this.LineNumber = lineNmber;

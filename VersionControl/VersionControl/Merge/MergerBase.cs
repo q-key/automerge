@@ -10,7 +10,7 @@ namespace VersionControl.Merge
     {
         protected readonly IComparer<T> Comparer;
 
-        public MergerBase(IComparer<T> comparer)
+        protected MergerBase(IComparer<T> comparer)
         {
             this.Comparer = comparer;
         }

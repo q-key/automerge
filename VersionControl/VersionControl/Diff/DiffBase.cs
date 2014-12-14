@@ -10,7 +10,7 @@ namespace VersionControl.Diff
     {
         private readonly IComparer<T> _comparer;
 
-        public DiffBase(IComparer<T> comparer)
+        protected DiffBase(IComparer<T> comparer)
         {
             this._comparer = comparer;
         }
