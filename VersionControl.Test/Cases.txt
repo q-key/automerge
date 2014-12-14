@@ -1,0 +1,57 @@
+﻿			// not only for developers!
+            //it can have doff providers for word, etc.
+
+            //1 - nothing is changed, when nothing is changed
+            //given: a file
+            //1st developer: didn't change anything
+            //2nd developer: didn't change anything           
+
+            //result: no conflicts, no changes
+
+            //and
+            //1st dev added  ' ' to 1st line
+            //1nd dev added  ' ' to 2st line
+            //result: ' ' added to both lines
+
+            //--------------
+
+            //2 -  
+            //given: a file
+            //1st developer: changed the file
+            //2nd developer:  didn't change the file
+            //result: no conflicts, applied changes of 1st developer
+
+
+            //3 -  
+            //given: a file
+            //1st developer: didn't change the file
+            //2nd developer:  changed the file
+            //result: no conflicts, applied changes of 2st developer
+
+
+            //4 -  cleaned by 1st dev
+            //given: a file
+            //1st developer: didn't change the file
+            //2nd developer:  removed all lines
+            //result: no conflicts, the file is empty
+
+            //5 -  cleaned by both devs
+            //given: a file
+            //1st developer: removed all lines
+            //2nd developer:  removed all lines
+            //result: no conflicts, the file is empty
+
+
+            //6 -  cleaned by 1st and changed by 2nd
+            //given: a file
+            //1st developer: removed all lines
+            //2nd developer:  changed one line
+            //result: one-line conflict, other lines were removed?? confirm?
+
+            //7
+            //один разработчик добавил функцию, второй в этом месте ничего не изменил.
+            //result: no conflict
+
+            // 8 
+            //оба разработчика изменили одну и ту же строку, но изменили ее по-разному.
+            //result: conflict
