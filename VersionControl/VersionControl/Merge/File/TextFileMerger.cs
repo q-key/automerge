@@ -33,6 +33,6 @@ namespace VersionControl.Merge.File
         protected override bool IsEmptyValue(string value)
         {
             return string.IsNullOrWhiteSpace(value.Trim());
-        }
+        } 
     }
 }
