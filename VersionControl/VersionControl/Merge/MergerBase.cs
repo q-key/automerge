@@ -77,6 +77,7 @@ namespace VersionControl.Merge
                 {
                     Versions = values
                 });
+
             }
             else
             {
